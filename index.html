@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavindu’s Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kavindu’s Shop</h1>
+        <nav>
+            <a href="#home">මුල් පිටුව</a>
+            <a href="#products">නිෂ්පාදන</a>
+            <a href="#about">අපි ගැන</a>
+            <a href="#contact">සම්බන්ධ වන්න</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>ඔයාගේ විශ්වාසනීය ගබඩාවට සාදරයෙන් පිළිගනිමු!</h2>
+        <p>හොඳම ගුණාත්මක නිෂ්පාදන සාධාරණ මිලට!</p>
+    </section>
+
+    
+        </div>
+    </section>
+
+    
+    </section>
+<section id="products">
+    <h2>අපේ නිෂ්පාදන</h2>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>නිෂ්පාදනය 1</h3>
+        <p>රු. <span class="price">1500</span></p>
+        <button onclick="addToCart(1500)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>නිෂ්පාදනය 2</h3>
+        <p>රු. <span class="price">2400</span></p>
+        <button onclick="addToCart(2400)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h3>නිෂ්පාදනය 3</h3>
+        <p>රු. <span class="price">1200</span></p>
+        <button onclick="addToCart(1200)">Add to Cart</button>
+    </div>
+</section>
+
+<section id="cart">
+    <h2>🛒 ඔබගේ වෙළඳ පොත</h2>
+    <p>Items in Cart: <span id="cart-count">0</span></p>
+    <p>Total: රු. <span id="cart-total">0</span></p>
+    <button onclick="removeFromCart()">Remove Last Item</button>
+    <button onclick="clearCart()">Clear Cart</button>
+</section>
+<section id="checkout">
+    <h2>💳 Checkout</h2>
+    <form id="checkout-form" onsubmit="return submitOrder()">
+        <label>නම:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label>ඊමේල්:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label>දුරකථන අංකය:</label><br>
+        <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="0771234567"><br><br>
+
+        <button type="submit">Buy Now</button>
+    </form>
+</section>
+
+</section>
+<section id="about">
+        <h2>අපි ගැන</h2>
+        <p>අපි 2020 සිට ගුණාත්මක භාණ්ඩ විකිණීමට නිරතව සිටින කුඩා ගබඩාවකි.  
+        ගනුදෙනුකරුවන්ට හොඳම සේවාව ලබාදීම අපේ අරමුණයි.</p>
+
+    <section id="contact">
+        <h2>සම්බන්ධ වන්න</h2>
+        <p>📞 077-1234567</p>
+        <p>📧 info@kavindushop.com</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kavindu’s Shop - සියලු හිමිකම් ඇවිරිණි</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
